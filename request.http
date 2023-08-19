@@ -1,0 +1,35 @@
+GET http://localhost:8080/api/users
+
+###
+
+PATCH http://localhost:8080/users/64dfe82d4f26ecae8421aaa2
+Content-Type: application/json
+
+{
+   "username":"入江心実"
+}
+
+###
+DELETE http://localhost:8080/users/64dd7c4d9a152274c1f5862e
+###
+
+POST http://localhost:8080/auth/register
+Content-Type: application/json
+
+{
+   "username":"大和きち",
+   "email":"yamtoti@gmail.com",
+   "password":2228888
+}
+###
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+
+{
+   "email":"yamtoti@gmail.com",
+   "password":2228888
+}
+
+###
+GET http://localhost:8080/users
+Content-Type: application/json
